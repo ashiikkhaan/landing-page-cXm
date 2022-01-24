@@ -1,0 +1,137 @@
+/*------- import fonts ------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;700&display=swap');
+
+/*------- css variables ------ */
+:root {
+    --main-bg-color: #F2F6FF;
+    --button-bg-color: #F44E77;
+    --regButton-bg-color: #16194F;
+
+}
+body {
+    /* font */
+    font-family: 'Roboto', sans-serif;
+    /* bg-image */
+    background-image: url("../images/MaskGroup.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%;
+
+    /* bg-color */
+    background-color: var(--main-bg-color);
+    
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+/* common styles end */
+
+.header{
+    
+    /* logo-menu-button flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo img {
+    width: 48px;
+    height: 48px;
+}
+/* menu */
+nav .nav-item{
+    display: inline-block;
+    margin: 0px 40px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* header button */
+.header-button .button {
+    padding: 15px 55px;
+    background-color: var(--button-bg-color);
+    border: 0px;
+    border-radius: 20px;
+
+    color: white;
+    font-weight: 400;
+    font-size: 17px;
+}
+.header-button{
+    margin-right: 90px;
+}
+
+
+.home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-info .spacer {
+    width: 100%;
+    height: 120px;
+}
+.home-info .home-title {
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+}
+.home-info .home-details {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+.reg-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--regButton-bg-color);
+    padding: 5px 35px;
+    border: none;
+    border-radius: 20px;
+
+    color: white;
+    font-size: 15px;
+}
+.reg-button img {
+    margin-left: 5px;
+}
+
+/* home images styles */
+
+.home-images{
+    margin-top: 70px;
+
+    position: relative;
+}
+.home-images .img-top-left {
+    width: 320px;
+    position: absolute;
+    top: -120px;
+    left: -140px;
+}
+.home-images .img-middle{
+    width: 580px;
+}
+.home-images .img-top-right {
+    width: 130px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.home-images .img-bottom-right {
+    width: 100px;
+    position: absolute;
+    bottom: 180px;
+    right: 40px;
+}
+.home-images .img-bottom-left {
+    width: 140px;
+    position: absolute;
+    bottom: 290px;
+    left: -100px;
+}
